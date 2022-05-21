@@ -18,12 +18,12 @@ function agregarEquipoLiga(req, res) {
                 if (!ligasEncontrdas) return res.status(500).send({ mensaje: 'error al encontrar ligas' })
 
 
-                if (ligasEncontrdas.length < 2) {
+                if (ligasEncontrdas.length < 10) {
 
                     for (let i = 0; i < ligasEncontrdas.length; i++) {
 
                         if (ligasEncontrdas[i].idEquipos.nombreEquipo == parametros.nombreEquipo) return res.status(400)
-                            .send({ mensaje: 'Ya se encuentra asignado a este curso.' })
+                            .send({ mensaje: 'Ya se encuentra asignado a esta liga.' })
                     }
 
 
