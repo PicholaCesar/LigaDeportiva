@@ -14,6 +14,8 @@ const api = express.Router();
 //RUTAS
 
 api.post('/obtebertabla', md_autenticacion.Auth, controladortabla.tablafunc)
+api.get('/obtenertablero', md_autenticacion.Auth, controladortabla.obtenertabla)
+
 
 
 module.exports = api;

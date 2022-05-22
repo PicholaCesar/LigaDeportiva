@@ -43,8 +43,7 @@ function agregarEquipoLiga(req, res) {
                             console.log(ligasEncontrdas.length)
 
                             return res.status(200).send({ mensaje: equipoporligaGuardado })
-
-                           
+                          
 
                         })
 

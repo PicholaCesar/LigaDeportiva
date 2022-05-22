@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 var tablaSchema = Schema({
-
+    nombreLiga: String,
     jornadas: Number,
     partidos: Number,
     equipo1: Number,
