@@ -5,8 +5,8 @@ exports.verAdmin = function(req, res, next) {
     next();
 }
 
-exports.verUsuario = function(req, res, next) {
-    if(req.user.rol !== "USUARIO") return res.status(403).send({mensaje: "Solo puede acceder el usuario"})
+exports.verEmpresa = function(req, res, next) {
+    if(req.user.rol !== "EMPRESA") return res.status(403).send({mensaje: "Solo puede acceder la Empresa"})
     
     next();
 }
